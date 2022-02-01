@@ -1,7 +1,7 @@
 name: plugin-test
 description: Describe your plugin explaining its purpose
 types:
-  - app
+  - app-template
 inputs:
   - label: Input Example
     type: text
