@@ -1,10 +1,10 @@
 name: push
 description: push
 inputs:
-- label: Commit message
+- label: branch name
   type: text
-  default: example
-  name: message
+  default: main
+  name: branch
   required: 'true'
 supported-os:
 - windows
@@ -14,5 +14,5 @@ requirements-check:
   dependency-example:
     check-command: git --version
     info: git is not installed
-command: "git push"
+command: git push -u origin "{{inputs.branch}}"
 
